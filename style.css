@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fondo suave */
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #2c3e50; /* Azul oscuro */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #98170a; /* Verde elegante */
+}
+
+/* Imagen */
+.logo {
+    max-width: 500px; /* Ajusta el tamaño máximo */
+    height: auto;
+    margin: 1rem auto;
+}
+
+/* Contenedor del texto */
+.parrafo {
+    max-width: 600px; /* Limita el ancho */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 1rem;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 60px;
+}
+
+
+.parrafo p {
+    text-align: center; /* Justifica el texto */
+    margin: 0;
+    font-size: 1rem;
+}
+.regal{
+    max-width: 500px; /* Ajusta el tamaño máximo */
+    height: auto;
+    margin: 1rem auto;  
+}
+.parrafo2 {
+    max-width: 600px; /* Limita el ancho */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 1rem;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-top: 60px;
+}
+.parrafo2 p {
+    text-align: center; /* Justifica el texto */
+    margin: 0;
+    font-size: 1rem;
+}
+.felicesf{
+    max-width: 600px; /* Limita el ancho */
+    margin: 0 auto; /* Centra el contenido */
+    margin-top: 60px;
+    padding: 1rem;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 60px;
+    
+}
+.felicesf label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #98170a; /* Verde elegante */
+}
+.contacto{
+    max-width: 200px; /* Limita el ancho */
+    margin: 200 auto; /* Centra el contenido */
+    margin-top: 60px;
+    padding: 1rem;
+    background-color: #fff; /* Fondo blanco */
+    color: #333;
+    border-radius: 20px; /* Bordes redondeados */
+    margin-bottom: 60px;  
+}
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animar {
+    opacity: 0;
+    transform: scale(0.75);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+.contacto {
+    align-content: center;
+    display: flex; /* Activa el modelo flexbox */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 8px; /* Espacio entre los elementos (imagen y texto) */
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.whats img {
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 50px; /* Tamaño máximo para la imagen */
+    height: 50px; /* Altura fija */
+    margin: 0; /* Quita márgenes innecesarios */
+}
+
+.texto {
+    display: flex;
+    flex-direction: column; /* Organiza los textos en columna */
+    justify-content: center; /* Centra verticalmente los textos */
+    font-family: "Raleway", serif;
+    font-style: normal;
+    text-align: left; /* Alinea el texto a la izquierda */
+    line-height: 1.2; /* Espaciado entre las líneas */
+}
+
+.texto span {
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    font-weight: normal;
+}
+
+.texto span:first-child {
+    font-size: 18px; /* Tamaño ligeramente mayor */
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .parrafo {
+        max-width: 90%; /* Reduce el ancho en móviles */
+        padding: 1rem;
+    }
+
+    .parrafo p {
+        font-size: 0.95rem; /* Reduce el tamaño de fuente */
+    }
+    .parrafo2 p {
+        font-size: 0.95rem;
+    }
+    .felicesf label{
+        font-size: 0.95rem;
+    }
+}

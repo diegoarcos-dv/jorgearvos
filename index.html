@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img  class="logo animar"  src="jor.png" alt="">
+
+    <h1 class="animar">Lic. Jorge Arcos P. </h1>
+    <h2 class="animar">Les desea ¡Feliz Navidad!</h2>
+
+
+    <div class="parrafo animar">
+   <p>     
+    AR Asesoría Legal Arcos&Asc quiere expresarte 
+    su más sincero agradecimiento por confiar en nosotros.
+   
+</p>
+
+    </div>
+<img class="regal animar"  src="regal .jpg" alt="">
+    <div class="parrafo2 animar">
+        <p>
+            Que esta temporada esté llena de paz, alegría y momentos inolvidables junto a tus seres queridos.
+            Deseamos que el próximo año esté repleto de éxitos, salud y prosperidad. Seguiremos trabajando con la misma dedicación para ofrecerte el mejor servicio legal.
+          </p>
+    </div>
+
+
+    <div class="felicesf animar">
+        <label for="">
+            ¡Felices Fiestas y un excelente 2025!
+        </label>
+
+        <label for="">
+            Con aprecio,
+            Lic Jorge Arcos P.
+        </label>
+    </div>
+    <div class="contacto animar">
+        <a href="https://wa.link/m1x12f" target="_blank" class="contacto animar" style="text-decoration: none; color: inherit;">
+            <div class="whats">
+                <img src="logowhats.jpg" alt="Icono de WhatsApp">
+            </div>
+            <div class="texto">
+                <span>Contacto</span>
+                <span>442 832 6264</span>
+            </div>
+        </a>
+        
+    </div>
+
+
+    <a href="mailto:lic.jorgearcos.ja@gmail.com?subject=Asunto%20del%20correo&body=Hola%2C%20Jorge%20Arcos." target="_blank" class="contacto animar" style="text-decoration: none; color: inherit;">
+        <div class="whats">
+            <img src="gmails.png" alt="Icono de Gmail">
+        </div>
+        <div class="texto">
+            <span>Contacto</span>
+            <span>lic.jorgearcos.ja@gmail.com</span>
+        </div>
+    </a>
+    
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () { 
+    const elementosAnimar = document.querySelectorAll(".animar");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible"); // Añadir animación al entrar
+            } else {
+                entry.target.classList.remove("visible"); // Quitar animación al salir
+            }
+        });
+    });
+
+    elementosAnimar.forEach((elemento) => {
+        observer.observe(elemento);
+    });
+});
+
+    </script>
+
+
+
+</body>
+</html>
